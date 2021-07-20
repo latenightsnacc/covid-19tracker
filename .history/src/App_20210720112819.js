@@ -24,7 +24,7 @@ class App extends React.Component {
 
   componentDidMount() {
 
-    console.log(covidStats[0]);
+    console.log(covidStats);
     
   }
   render() {

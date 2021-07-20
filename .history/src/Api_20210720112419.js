@@ -1,4 +1,4 @@
-
+import axios from 'axios'
 
 // const covidStats = {
 //     getData: () =>
@@ -16,8 +16,6 @@
 //     })
 // }
 
-import axios from "axios";
-
 const options = {
   method: 'GET',
   url: 'https://covid-19-data.p.rapidapi.com/country/all',
@@ -27,8 +25,10 @@ const options = {
   }
 };
 
-axios.request(options).then(function (response) {
+axios.request(options.then(function (response) {
 	console.log(response.data);
 }).catch(function (error) {
 	console.error(error);
 });
+
+export default covidStats;

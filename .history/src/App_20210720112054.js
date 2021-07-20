@@ -1,21 +1,6 @@
 import React from 'react';
 import Card from './components/Card/Card';
-import axios from "axios";
-
-const options = {
-  method: 'GET',
-  url: 'https://covid-19-data.p.rapidapi.com/country/all',
-  headers: {
-    'x-rapidapi-key': '939f16deb5msh73ce3b20c56e8a8p18d292jsne14df2fe5abd',
-    'x-rapidapi-host': 'covid-19-data.p.rapidapi.com'
-  }
-};
-
-const covidStats = axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+import covidStats from './Api';
 
 class App extends React.Component {
   state = {
@@ -24,7 +9,7 @@ class App extends React.Component {
 
   componentDidMount() {
 
-    console.log(covidStats[0]);
+    console.log(covidStats);
     
   }
   render() {
