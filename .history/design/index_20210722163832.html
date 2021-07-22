@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind Css-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--Font Awesome 5 CDN-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--Roboto: Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>COVID-19 Tracker</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        #coco {
+            
+            fill: rgb(1, 1, 58);
+            stroke: rgb(95, 4, 80);
+            stroke-width: 5px;
+            animation: virus-spin infinite 20s linear; 
+            
+        }
+
+        @keyframes virus-spin {
+            from {
+                /* transform: rotate(0deg); */
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(-360deg);
+            }
+        }
+                    
+    </style>
+</head>
+<body>
+    <main class="m-auto">
+        <!--Navigation Component-->
+        <div class="container">
+            <nav class="flex justify-between w-100 items-center h-24">
+                <a href="index.html">
+                    <div>COVID-19 tracker</div>
+                </a>
+                <ul class="flex">
+                    <li> 
+                        <a href="">statistics</a>
+                    </li>
+                    <li class="ml-5">
+                        <a href="">symptoms</a>
+                    </li>
+                    <li class="ml-5">
+                        <a href="">prevention</a>
+                    </li>
+                    <li class="ml-5">
+                        <a href="">news</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="container">
+            <div class="tags py-2">
+                <button class="border-2 border-blue-500 px-3 py-1 rounded-2xl text-gray-500 hover:bg-blue-500 hover:text-white text-mute text-sm capitalize">world</button>
+                <button class="border-2 border-blue-500 px-3 py-1 rounded-2xl text-gray-500 hover:bg-blue-500 hover:text-white text-mute text-sm capitalize">countries</button>
+                <button class="border-2 border-blue-500 px-3 py-1 rounded-2xl text-gray-500 hover:bg-blue-500 hover:text-white text-mute text-sm capitalize">country</button>
+            </div>
+            <div class="flex flex-col md:flex-row  shadow-2xl">
+                
+                <div class="w-100 md:w-1/2">
+                    <h1 class="text-blue-600 text-center py-2">World Statistics</h1>
+                    <div class="stats">
+                        <div class="w-56 flex flex-col items-center justify-center p-3 m-auto">
+                            <span class="text-4xl text-blue-600 font-bold">1,000,000</span>
+                            <span class="text-lg text-gray-400 font-bold">Active cases</span> 
+                        </div>
+                        <div class="grid grid-row">
+                            <div class="w-56 flex flex-col items-center justify-center p-3">
+                                <span class="text-4xl text-blue-600 font-bold">1,000,000</span>
+                                <span class="text-lg text-gray-400 font-bold">Active cases</span> 
+                            </div>
+                            <div class="w-56 flex flex-col items-center justify-center p-3">
+                                <span class="text-4xl text-blue-600 font-bold">1,000,000</span>
+                                <span class="text-lg text-gray-400 font-bold">Active cases</span> 
+                            </div>
+                            <div class="w-56 flex flex-col items-center justify-center p-3">
+                                <span class="text-4xl text-blue-600 font-bold">1,000,000</span>
+                                <span class="text-lg text-gray-400 font-bold">Active cases</span> 
+                            </div>
+                            <div class="w-56 flex flex-col items-center justify-center p-3">
+                                <span class="text-4xl text-blue-600 font-bold">1,000,000</span>
+                                <span class="text-lg text-gray-400 font-bold">Active cases</span> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="w-100 md:w-1/2">
+                    <h2>latest news</h2>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>

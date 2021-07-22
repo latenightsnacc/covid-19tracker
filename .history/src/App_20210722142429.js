@@ -23,8 +23,8 @@ function App () {
     <div className="App">
       <h1 className="text-blue-600 text-xl">covid-19</h1>
       <Card 
-        cardLabel="global" confirmedCases=''
-        recoveryCases='{stats.total_recovered}' criticalCases='{stats.serious_critical}' deaths='{stats.total_deaths}'  />
+        cardLabel="global" confirmedCases={stats.total_cases}
+        recoveryCases={stats.total_recovered} criticalCases={stats.serious_critical} deaths={stats.total_deaths}  />
     </div>
   );
   
